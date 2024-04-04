@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<Product>
+@addTagHelper *, aspasp9
+<div class="text-center">
+    <h1 class="display-4">Продукти</h1>
+    <vc:prod-table products="Model.ToList()"></vc:prod-table>
+    <small>Виведено за допомогою ViewComponent</small>
+</div>
+ForecastForm.cshtml
+<div class="text-center">
+    <h2 class="display-4">Погода</h2>
+    <form method="post" style="width: 30%; margin:auto">
+        <label>Введіть місто(англійською)</label>
+        <input type="text" name="city" />
+        <button type="submit">Дивитися</button>
+    </form>
+</div>

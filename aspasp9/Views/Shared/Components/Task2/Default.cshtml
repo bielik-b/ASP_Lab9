@@ -1,0 +1,9 @@
+﻿@model WeatherData
+<body>
+    <div class="text-center">
+        <p>Погода: @Model.Weather.ElementAt(0).Main</p><br />
+        <p>Опис: @Model.Weather.ElementAt(0).Description</p><br />
+        <p>Температура: @Model.Main.Temp C</p>
+        <p>Вологість: @Model.Main.Humidity%</p>
+    </div>
+</body>

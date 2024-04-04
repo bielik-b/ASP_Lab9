@@ -1,0 +1,6 @@
+﻿@model string
+@addTagHelper *, aspasp9
+<div class="text-center">
+    <h2 class="display-6">Погода в @Model</h2>
+    <vc:forecast city="@Model"></vc:forecast>
+</div>
